@@ -12,12 +12,12 @@ import NetworkHelper
 
 
 struct HoroscopeAPI {
-    static func getHoroscope(for scope: String, completion: @escaping (Result <[Horoscope], AppError>) -> ()) {
+    static func getHoroscope( completion: @escaping (Result <[Horoscope], AppError>) -> ()) {
         
         
-        let horoscopeSign = scope.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "virgo"
+//        let horoscopeSign = scope.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "virgo"
         
-        let horoscopeURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(horoscopeSign)/today"
+        let horoscopeURL = "http://sandipbgt.com/theastrologer/api/horoscope/all/today"
         
         guard let url = URL(string: horoscopeURL) else {
             completion(.failure(.badURL(horoscopeURL)))
@@ -41,3 +41,5 @@ struct HoroscopeAPI {
         }
     }
 }
+
+//for scope: String,
