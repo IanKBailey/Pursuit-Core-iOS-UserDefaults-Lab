@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HoroscopeDetailViewController.swift
 //  Horoscope
 //
 //  Created by Ian Bailey on 1/13/20.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HoroscopeDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+        
+    }
+    
+
+    
 
 }
-
