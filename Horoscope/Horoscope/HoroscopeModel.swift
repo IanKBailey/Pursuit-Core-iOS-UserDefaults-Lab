@@ -9,10 +9,10 @@
 import Foundation
 
 
+
 struct Horoscope: Decodable {
     var sunsign: String
     var date: String
     var horoscope: String
-    var mood: String
-    var keywords: String
+
 }

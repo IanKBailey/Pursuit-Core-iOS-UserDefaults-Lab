@@ -10,9 +10,17 @@ import UIKit
 
 class HoroscopeDetailViewController: UIViewController {
 
+    @IBOutlet weak var horoscope: UITextView!
+    
+    
+    
+    var horoscopes: Horoscope!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        horoscope.text = horoscopes.horoscope
         
     }
     

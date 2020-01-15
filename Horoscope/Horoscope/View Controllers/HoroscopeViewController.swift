@@ -42,7 +42,19 @@ class HoroscopeViewController: UIViewController {
         }
     }
     
-   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let horoscopeDetailViewController = segue.destination as? HoroscopeDetailViewController, let indexPath = horoscopeTableVIew.indexPathForSelectedRow else {
+            fatalError("couldn't segue")
+        }
+        
+        let horoscope = horoscopes[indexPath.row]
+        horoscopeDetailViewController.horoscopes = horoscope
+    }
+    
+    
+    
+    
+    
 
 }
 

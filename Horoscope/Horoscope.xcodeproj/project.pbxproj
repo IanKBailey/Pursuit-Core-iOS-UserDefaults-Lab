@@ -73,7 +73,6 @@
 		56EFAD0623CD00EA001406D3 /* Horoscope */ = {
 			isa = PBXGroup;
 			children = (
-				565770AB23CD0C3500A20ED7 /* View Controllers */,
 				56EFAD0723CD00EA001406D3 /* AppDelegate.swift */,
 				56EFAD0923CD00EA001406D3 /* SceneDelegate.swift */,
 				56EFAD0D23CD00EA001406D3 /* Main.storyboard */,
@@ -82,6 +81,7 @@
 				56EFAD1023CD00ED001406D3 /* Assets.xcassets */,
 				56EFAD1223CD00ED001406D3 /* LaunchScreen.storyboard */,
 				56EFAD1523CD00ED001406D3 /* Info.plist */,
+				565770AB23CD0C3500A20ED7 /* View Controllers */,
 			);
 			path = Horoscope;
 			sourceTree = "<group>";
